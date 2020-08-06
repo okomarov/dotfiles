@@ -1,0 +1,59 @@
+{
+	"breadcrumbs.enabled": false,
+
+	"diffEditor.renderSideBySide": false,
+
+	"editor.acceptSuggestionOnEnter": "off",
+	"editor.accessibilitySupport": "off",
+	"editor.folding": false,
+	"editor.matchBrackets": "never",
+	"editor.minimap.enabled": false,
+	"editor.parameterHints.enabled": false,
+	"editor.quickSuggestions": {
+		"other": false,
+		"comments": false,
+		"strings": false
+	},
+	"editor.renderWhitespace": "none",
+	"editor.snippetSuggestions": "none",
+	"editor.tabCompletion": "on",
+	"editor.tabSize": 4,
+
+	"explorer.confirmDelete": false,
+
+	"files.trimTrailingWhitespace": true,
+
+	"indentRainbow.ignoreErrorLanguages": [
+		"*"
+	],
+
+	"projectManager.git.baseFolders": [
+		"/Users/okomarov/Documents/repos"
+	],
+
+	"python.envFile": "${workspaceFolder}/.envrc",
+	"python.sortImports.args": [
+		"--force-single-line-imports",
+		"--dont-order-by-type",
+		"--force-sort-within-sections",
+		"--lines-after-imports",
+		"2"
+	],
+	"python.terminal.activateEnvironment": false,
+	"python.venvPath": "~/.virtualenvs",
+
+	"terminal.integrated.fontFamily": "Menlo for Powerline",
+	"terminal.integrated.scrollback": 5000,
+	"terminal.integrated.shell.osx": "/bin/zsh",
+
+	"window.restoreFullscreen": true,
+	"window.restoreWindows": "all",
+	"window.zoomLevel": 0,
+
+	"workbench.activityBar.visible": false,
+	"workbench.colorTheme": "Solarized Dark",
+	"workbench.editor.enablePreview": false,
+	"workbench.editor.enablePreviewFromQuickOpen": false,
+	"workbench.editor.revealIfOpen": true,
+	"workbench.editor.showTabs": true,
+}
