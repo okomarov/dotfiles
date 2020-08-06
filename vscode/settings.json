@@ -1,12 +1,9 @@
 {
-	"breadcrumbs.enabled": false,
-
 	"diffEditor.renderSideBySide": false,
 
-	"editor.acceptSuggestionOnEnter": "off",
+	"editor.acceptSuggestionOnEnter": "smart",
 	"editor.accessibilitySupport": "off",
 	"editor.folding": false,
-	"editor.matchBrackets": "never",
 	"editor.minimap.enabled": false,
 	"editor.parameterHints.enabled": false,
 	"editor.quickSuggestions": {
@@ -14,36 +11,32 @@
 		"comments": false,
 		"strings": false
 	},
+	"editor.renderControlCharacters": false,
 	"editor.renderWhitespace": "none",
 	"editor.snippetSuggestions": "none",
 	"editor.tabCompletion": "on",
-	"editor.tabSize": 4,
 
 	"explorer.confirmDelete": false,
 
 	"files.trimTrailingWhitespace": true,
+	"files.watcherExclude": {
+          "**/__pycache__/**": true,
+          "**/.svn/**": true,
+          "**/bower_components/**": true,
+          "**/node_modules/**": true
+	},
 
-	"indentRainbow.ignoreErrorLanguages": [
-		"*"
-	],
-
-	"projectManager.git.baseFolders": [
-		"/Users/okomarov/Documents/repos"
-	],
-
-	"python.envFile": "${workspaceFolder}/.envrc",
 	"python.sortImports.args": [
 		"--force-single-line-imports",
 		"--dont-order-by-type",
 		"--force-sort-within-sections",
-		"--lines-after-imports",
-		"2"
+		"--lines-after-imports", "2"
 	],
-	"python.terminal.activateEnvironment": false,
-	"python.venvPath": "~/.virtualenvs",
-
+	
+	"telemetry.enableTelemetry": false,
+	
 	"terminal.integrated.fontFamily": "Menlo for Powerline",
-	"terminal.integrated.scrollback": 5000,
+	"terminal.integrated.scrollback": 10000,
 	"terminal.integrated.shell.osx": "/bin/zsh",
 
 	"window.restoreFullscreen": true,
