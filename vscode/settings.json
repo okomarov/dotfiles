@@ -25,7 +25,9 @@
           "**/bower_components/**": true,
           "**/node_modules/**": true
 	},
-
+	"python.linting.flake8Args": [
+		"--max-line-length", "95"
+	],
 	"python.sortImports.args": [
 		"--force-single-line-imports",
 		"--dont-order-by-type",
