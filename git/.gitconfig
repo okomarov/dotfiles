@@ -1,0 +1,22 @@
+[user]
+	name = Oleg Komarov
+	email = oleg.komarov11@gmail.com
+[gc]
+	autoDetach = false
+[filter "clean_ipynb"]
+	clean = jq --indent 1 '(.cells[] | select(has(\"outputs\")) | .outputs) = [] | (.cells[] | select(has(\"execution_count\")) | .execution_count) = null\n | .metadata = {\"hide_input\": false, \"language_info\": {\"name\": \"python\", \"pygments_lexer\": \"ipython3\"}}\n | .cells[].metadata = {}'
+	smudge = cat
+	required = true
+[core]
+	attributesfile = /Users/okomarov/.gitattributes
+	excludesfile = /Users/okomarov/.gitignore_global
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[init]
+	defaultBranch = main
+[rerere]
+	enabled = true
+	autoupdate = true
