@@ -1,0 +1,11 @@
+# Ghostty config — otherwise running on defaults.
+# All options: https://ghostty.org/docs/config/reference  (or: ghostty +show-config --default --docs)
+
+# Steady (non-blinking) cursor
+cursor-style-blink = false
+
+# Disable programming ligatures (===, !=, =>, <=, etc. render as literal chars)
+font-feature = -calt, -liga, -dlig
+
+# Fixed light theme, independent of macOS appearance (ghostty +list-themes to browse)
+theme = Selenized Light
